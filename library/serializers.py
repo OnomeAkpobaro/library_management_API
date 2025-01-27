@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from .models import Book
 from django.utils import timezone
+from rest_framework.exceptions import ValidationError
 
 class BookSerializer(serializers.ModelSerializer):
     """
@@ -22,8 +23,12 @@ class BookSerializer(serializers.ModelSerializer):
         """
         Validates book edition
         """
+        try:
+            value = int(value)
+        except ValueError:
+            raise ValidationError("Edition must be an interger.")
         if value < 1:
-            raise serializers.ValidationError("Edition must be at least 1.")
+            raise ValidationError("Edition must be at least 1.")
         return value
     
     def validate_title(self, value):

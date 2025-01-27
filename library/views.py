@@ -49,8 +49,8 @@ class BookViewSet(viewsets.ModelViewSet):
                 throttle.rate = '100/minute'
         return throttle_class
     
-    def finalize_response(self, request, response):
-        response = super().finalize_response(request, response)
+    def finalize_response(self, request, response, *args, **kwargs):
+        response = super().finalize_response(request, response, *args, **kwargs)
         throttles = self.get_throttles()
         
         if throttles:
