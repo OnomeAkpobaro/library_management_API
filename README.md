@@ -1,6 +1,6 @@
 # Library Management System API
 
-A Django REST Framework-based API for managing a library's book collection. This system provides comprehensive endpoints for book management with features like pagination, rate limiting, and filtering.
+A Django RESTful API for managing a library's book collection. This system provides comprehensive endpoints for book management with features like pagination, rate limiting, and filtering.
 
 ## Features
 
