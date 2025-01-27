@@ -52,11 +52,11 @@ PUT /api/books/{id}/    - Update a specific book
 DELETE /api/books/{id}/ - Delete a specific book
 ```
 ```
-GET  https://library1212.pythonanywhere.com/api/books/                          - List all books (paginated)
-POST  https://library1212.pythonanywhere.com/api/books/                         - Create a new book
-GET  https://library1212.pythonanywhere.com/api/books/{id}/                     - Retrieve a specific book
-PUT  https://library1212.pythonanywhere.com/api/books/{id}/                     - Update a specific book
-DELETE  https://library1212.pythonanywhere.com/api/books/{id}/                  - Delete a specific book
+GET  https://library1212.pythonanywhere.com/api/books/                      - List all books (paginated)
+POST  https://library1212.pythonanywhere.com/api/books/                     - Create a new book
+GET  https://library1212.pythonanywhere.com/api/books/{id}/                 - Retrieve a specific book
+PUT  https://library1212.pythonanywhere.com/api/books/{id}/                 - Update a specific book
+DELETE  https://library1212.pythonanywhere.com/api/books/{id}/              - Delete a specific book
 ```
 
 
