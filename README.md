@@ -86,8 +86,17 @@ The API implements rate limiting with the following constraints:
         "availability": "Available",
         "edition": "1",
         "summary": "A sample book summary"
+    },
+    
+    "status": "success",
+    "message": "Book details retrieved successfully",
+    "headers": {
+        "X-RateLimit-Limit": 100,
+        "X-RateLimit-Remaining": 99,
+        "X-RateLimit-Reset": 1668144600
     }
 }
+
 ```
 
 ### Error Response
@@ -100,6 +109,11 @@ The API implements rate limiting with the following constraints:
         "field_name": [
             "Error message"
         ]
+    },
+    "headers": {
+        "X-RateLimit-Limit": 100,
+        "X-RateLimit-Remaining": 99,
+        "X-RateLimit-Reset": 1737986843
     }
 }
 ```
