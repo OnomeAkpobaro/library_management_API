@@ -52,7 +52,7 @@ PUT /api/v1/books/{id}/    - Update a specific book
 DELETE /api/v1/books/{id}/ - Delete a specific book
 ```
 ```
-*POSTMAN TEST*
+POSTMAN TEST
 GET  https://library1212.pythonanywhere.com/api/v1/books/                  - List all books (paginated)
 POST https://library1212.pythonanywhere.com/api/v1/books/                  - Create a new book
 GET  https://library1212.pythonanywhere.com/api/v1/books/1/               - Retrieve a specific book
